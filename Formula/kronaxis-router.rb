@@ -13,7 +13,7 @@ class KronaxisRouter < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Kronaxis/kronaxis-router/releases/download/v1.1.0/kronaxis-router_1.1.0_darwin_amd64.tar.gz"
-      sha256 "eca2d1647e7c7b243b7320b72fc913877d170899051c200427ce170adbdfbec0"
+      sha256 "19e89d48378a8163efdd6b4d7aad4d8af17adcae8d1d14d7ea0300aa7ce46020"
 
       define_method(:install) do
         bin.install "kronaxis-router"
@@ -21,7 +21,7 @@ class KronaxisRouter < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Kronaxis/kronaxis-router/releases/download/v1.1.0/kronaxis-router_1.1.0_darwin_arm64.tar.gz"
-      sha256 "7b213bc68b55d55e7c00195585fa4173b7177c5d162634c8e19f5a8f18d8d101"
+      sha256 "cf9d73fcf2bd09f808ca9fdd0905054f14648fce7b3aa428214a78d7338722dd"
 
       define_method(:install) do
         bin.install "kronaxis-router"
@@ -32,14 +32,14 @@ class KronaxisRouter < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Kronaxis/kronaxis-router/releases/download/v1.1.0/kronaxis-router_1.1.0_linux_amd64.tar.gz"
-      sha256 "3e93333432907a5bfc006584e61d4552baf6dc9573e4eec14d9a20a7d197b7f0"
+      sha256 "0f0d1d9525fdc9168432ef7124051afd8f6a6ab0414f48a030b84c042d5c50d4"
       define_method(:install) do
         bin.install "kronaxis-router"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Kronaxis/kronaxis-router/releases/download/v1.1.0/kronaxis-router_1.1.0_linux_arm64.tar.gz"
-      sha256 "502f7618fed0f6dc1f35ced9ab55f85869bbfcdd8923ae7853596d1b24b1d270"
+      sha256 "5a62932e4221e72b957a090fc1a1b93658a0952d1c5946435fb7f26bbbd33623"
       define_method(:install) do
         bin.install "kronaxis-router"
       end
